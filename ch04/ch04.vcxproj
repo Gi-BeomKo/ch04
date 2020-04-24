@@ -141,6 +141,7 @@
     <ClCompile Include="ch04-1.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_DEBUG;_CONSOLE;%(PreprocessorDefinitions)_CRT_SECURE_NO_WARNINGS_</PreprocessorDefinitions>
       <ConformanceMode Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ConformanceMode>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/wd4996 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
